@@ -1,0 +1,1 @@
+@import"https://fonts.googleapis.com/css2?family=Montserrat&display=swap";body{font-family:Montserrat,sans-serif;background-color:#d3d3d3}a{display:flex;align-items:center;text-decoration:none;font-size:20px;color:#2e2f42;transition:color .25s cubic-bezier(.4,0,.2,1);line-height:1.5}a:hover{color:#f08080}a:hover:after{margin-left:8px;content:"❯";font-size:20px}
