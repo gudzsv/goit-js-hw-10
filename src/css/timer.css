@@ -1,0 +1,98 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
+
+body {
+  font-family: 'Montserrat', sans-serif;
+  background-color: lightgray;
+}
+
+a {
+  display: block;
+  margin-bottom: 50px;
+  text-decoration: none;
+  font-size: 20px;
+  color: #2e2f42;
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+a:hover {
+  color: lightcoral;
+}
+
+.container {
+  width: 480px;
+  margin: 0 auto;
+  padding: 40px;
+  background-color: #fff;
+  border-radius: 8px;
+}
+
+.wrapper {
+  text-align: center;
+}
+
+#datetime-picker {
+  border: none;
+  border: 1px solid silver;
+  border-radius: 4px;
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 600;
+  letter-spacing: 0.04em;
+  padding: 10px;
+  text-align: center;
+}
+
+#datetime-picker:disabled {
+  background-color: lightgray;
+  cursor: auto;
+}
+
+button {
+  margin-top: 16px;
+  min-width: 95px;
+  height: 40px;
+  border: none;
+  border-radius: 8px;
+  padding-block: 8px;
+  background-color: #4e75ff;
+  color: #fff;
+  cursor: pointer;
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+button:disabled {
+  background-color: #6c8cff;
+  cursor: auto;
+}
+
+button:hover:not(:disabled),
+button:focus:not(:disabled) {
+  background-color: #6c8cff;
+}
+
+span {
+  display: block;
+}
+
+.timer {
+  margin-top: 20px;
+  display: flex;
+  justify-content: center;
+  gap: 16px;
+}
+
+.field {
+  text-align: center;
+}
+
+.value {
+  font-weight: bold;
+  text-transform: uppercase;
+  font-size: 35px;
+  letter-spacing: 0.04em;
+}
+
+.label {
+  text-transform: uppercase;
+  font-weight: bold;
+  letter-spacing: -0.02em;
+}

@@ -1,11 +1,11 @@
 {
-  "name": "goit-js-hw-09",
+  "name": "goit-js-hw-10",
   "private": true,
   "version": "0.0.0",
   "type": "module",
   "scripts": {
     "dev": "vite",
-    "build": "vite build --base=/goit-js-hw-09/",
+    "build": "vite build --base=/goit-js-hw-10/",
     "preview": "vite preview"
   },
   "devDependencies": {
@@ -13,7 +13,8 @@
     "vite": "^5.1.0"
   },
   "dependencies": {
-    "simplelightbox": "^2.14.2",
+    "flatpickr": "^4.6.13",
+    "izitoast": "^1.4.0",
     "vite-plugin-full-reload": "^1.1.0",
     "vite-plugin-html-inject": "^1.1.2"
   }
