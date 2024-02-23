@@ -36,7 +36,7 @@ const options = {
 flatpickr(inputDateTimeEl, options);
 
 function onClickStartTimer() {
-  intervalId = setInterval(dateTimeCalculation, 1000);
+  intervalId = setInterval(calculateTimeLeft, 1000);
   disableBtn();
   inputDateTimeEl.setAttribute('disabled', '');
 }
@@ -46,6 +46,7 @@ function changeElementDayTimeValue(ms) {
 
   if (!days && !hours && !minutes && !seconds) {
     clearInterval(intervalId);
+    inputDateTimeEl.removeAttribute('disabled');
   }
 
   timerDays.textContent = addLeadingZero(days);
@@ -54,7 +55,7 @@ function changeElementDayTimeValue(ms) {
   timerSeconds.textContent = addLeadingZero(seconds);
 }
 
-function dateTimeCalculation() {
+function calculateTimeLeft() {
   const currentDateMs = new Date().getTime();
   const selectedDateMS = new Date(userSelectedDate).getTime();
   const ms = selectedDateMS - currentDateMs;

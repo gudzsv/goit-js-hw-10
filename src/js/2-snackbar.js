@@ -34,7 +34,7 @@ function makePromise({ delay, state }) {
       } else {
         reject({ delay, state });
       }
-    }, delay);
+    }, Number(delay));
   });
 }
 
